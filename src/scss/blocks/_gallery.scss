@@ -1,0 +1,45 @@
+.gallery {
+    width: 100%;
+    margin-bottom: 9.25rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 9.375rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    &__item {
+        height: 17.5rem;
+        width: 100%;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__items,
+    &__text {
+        padding-top: 2.6875rem;
+    }
+
+    &__title {
+        margin-bottom: 2.5rem;
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

@@ -1,0 +1,132 @@
+// Home Styles
+
+.home {
+    width: 100%;
+    margin-bottom: 6.25rem;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        &_desk {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 41.125rem;
+        gap: 1.25rem 4.25rem;
+
+        &_desk {
+            display: none;
+            margin: 2.5rem 0;
+        }
+
+        li {
+            font-size: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            white-space: nowrap;
+
+            &::before {
+                content: "";
+                height: 1.375rem;
+                min-width: 0.25rem;
+                background: $primaryColor;
+            }
+        }
+    }
+
+    &__img {
+        margin: 1.875rem 0 2.5rem;
+
+        &_mobile {
+            display: none;
+        }
+    }
+
+    &__btn {
+        padding: 1.25rem;
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1830px) {
+    .home {
+        &__list {
+            &_desk {
+                display: grid;
+            }
+        }
+
+        &__img {
+            margin-top: 0;
+        }
+
+        &__row {
+            display: none;
+        }
+
+        &__title {
+            &_desk {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .home {
+        &__list {
+            gap: 1rem 4.625rem;
+
+            li {
+                white-space: normal;
+                align-items: flex-start;
+
+                &::before {
+                    transform: translate(0, 25%);
+                    min-width: 0.1875rem;
+                    width: 0.1875rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .home {
+        margin-bottom: 4.75rem;
+
+        &__img {
+            display: none;
+
+            &_mobile {
+                width: 100%;
+                display: block;
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        &__list {
+            li {
+                font-size: 1rem;
+
+                &::before {
+                    height: 1rem;
+                }
+            }
+        }
+
+        &__btn {
+            padding: 0.875rem;
+        }
+    }
+}

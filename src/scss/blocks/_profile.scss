@@ -1,0 +1,23 @@
+.profile {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2.6875rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+.profile-item {
+    padding: 1.25rem 1.125rem 1.25rem 1.25rem;
+    background: $white;
+    color: $primaryColor;
+}

@@ -1,0 +1,50 @@
+.search-page {
+    width: 100%;
+    margin-bottom: 8.75rem;
+    margin-top: 1.875rem;
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__search {
+        margin-bottom: 5rem;
+        max-width: 35.75rem;
+        width: 35.75rem;
+        display: flex;
+        gap: 0.5rem;
+        background: $gray3;
+        padding: 0.4375rem 0.625rem 0.4375rem 3rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 1.25rem;
+            width: 1.25rem;
+            background: url("../img/icons/search.svg") no-repeat center / 100%;
+            position: absolute;
+            top: 50%;
+            left: 1.25rem;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &__input {
+        width: 100%;
+        font-weight: $semibold;
+
+        &::placeholder {
+            color: $fontColor;
+        }
+    }
+
+    &__btn {
+        padding: 1rem 1.25rem;
+        min-width: 7rem;
+        width: 7rem;
+
+        &::after {
+            display: none;
+        }
+    }
+}

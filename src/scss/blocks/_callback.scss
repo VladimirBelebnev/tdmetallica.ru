@@ -1,0 +1,82 @@
+// Callback Styles
+
+.callback {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__title {
+        text-align: center;
+        padding-top: 2.6875rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__form {
+        background: $blue1;
+        padding: 3.75rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        max-width: 55.625rem;
+        width: 100%;
+
+        .input_textarea,
+        .btn {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .btn {
+            padding: 1.25rem;
+        }
+    }
+
+    .checkbox {
+        a {
+            color: $primaryColor;
+            text-decoration: underline;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 600px) {
+    .callback {
+        &__title {
+            text-align: left;
+            padding-top: 1.6875rem;
+        }
+
+        &__form {
+            padding: 1.25rem;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        &__wrap {
+            grid-template-columns: 1fr;
+
+            .input_textarea,
+            .btn {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+        }
+
+        .btn {
+            padding: 0.875rem;
+        }
+    }
+}

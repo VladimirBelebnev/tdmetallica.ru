@@ -1,0 +1,168 @@
+.map {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__header {
+        padding-top: 2.6875rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+    }
+
+    &__btn {
+        max-width: 27.1875rem;
+
+        &_mobile {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.25rem;
+    }
+
+    &__main {
+        width: 100%;
+        height: 63.875rem;
+        background: url("../img/map/main.svg") no-repeat center / 100%;
+        position: relative;
+    }
+}
+
+.map-item {
+    position: absolute;
+    cursor: pointer;
+
+    &__img {
+        width: 3.9375rem;
+        height: 6.5625rem;
+        background: url("../img/map/lep.svg") no-repeat center / 100%;
+        position: absolute;
+        top: 0;
+        left: -0.125rem;
+        z-index: 2;
+        transform: translate(0, calc(-100% + 1rem));
+    }
+
+    &__circle {
+        opacity: 0;
+        width: 3.5625rem;
+        height: 1.875rem;
+        background: $white;
+        border-radius: 100%;
+        position: relative;
+        transition: 0.3s;
+
+        &::before {
+            content: "";
+            width: 0.125rem;
+            height: 5.8125rem;
+            position: absolute;
+            bottom: 0.5rem;
+            right: -0.4rem;
+            background: $white;
+            transform: rotate(12.5deg);
+        }
+    }
+
+    &__name {
+        opacity: 0;
+        line-height: 110%;
+        padding: 1rem 1.25rem;
+        background: $white;
+        position: absolute;
+        right: -0.9rem;
+        transform: translate(100%, 0);
+        bottom: 6rem;
+        white-space: nowrap;
+        transition: 0.3s;
+    }
+
+    &:hover &__name,
+    &:hover &__circle {
+        opacity: 1;
+    }
+}
+
+.map-item-mobile {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    background: $primaryColor;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    display: none;
+}
+
+// Media Queries
+
+@media all and (max-width: 1100px) {
+    .map {
+        &__btn {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        &__header {
+            padding-top: 4rem;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .map {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__main {
+            background-image: url("../img/map/main-mobile.svg");
+            max-width: 21.25rem;
+            height: 12.06rem;
+            margin-bottom: 1.25rem;
+        }
+
+        &__subtitle {
+            display: none;
+        }
+
+        &__header {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .map {
+        margin-bottom: 5rem;
+        &__header {
+            padding-top: 1.6875rem;
+        }
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        .map-item {
+            display: none;
+        }
+
+        .map-item-mobile {
+            display: flex;
+        }
+    }
+}

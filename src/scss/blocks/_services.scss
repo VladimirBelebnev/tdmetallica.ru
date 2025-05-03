@@ -1,0 +1,53 @@
+// Services Styles
+
+.services {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 8.9375rem;
+        margin-bottom: 2.5rem;
+        padding-top: 2.6875rem;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    &__pagination {
+        display: none;
+        justify-content: center;
+        margin-top: 1.25rem;
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1200px) {
+    .services {
+        &__header {
+            margin-right: 0;
+            padding-top: 4rem;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .services {
+        margin-bottom: 5rem;
+        &__header {
+            padding-top: 1.625rem;
+        }
+
+        // .card {
+        //     height: 100%;
+        // }
+
+        &__pagination {
+            display: flex;
+        }
+    }
+}

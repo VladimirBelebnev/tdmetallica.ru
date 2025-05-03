@@ -1,0 +1,65 @@
+<section class="map">
+    <div class="container">
+        <div class="pseudo">
+            <span class="pseudo__text"> [ размещение опор ] </span>
+        </div>
+
+        <header class="map__header">
+            <a
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                href="#"
+                class="btn map__btn"
+            >
+                смотреть все
+            </a>
+
+            <div class="map__right">
+                <h2
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    class="block-title map__title"
+                >
+                    <span class="blue">География</span> поставок опор ЛЭП
+                </h2>
+
+                <p
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="100"
+                    class="map__subtitle"
+                >
+                    Наведи курсор на вышку, чтобы узнать о проекте подробнее
+                </p>
+            </div>
+        </header>
+
+        <div
+            data-aos="zoom-out"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+            class="map__main"
+        >
+            <div class="map-item-mobile" style="left: 15%; top: 20%">2</div>
+            <div class="map-item-mobile" style="left: 10.5%; top: 34%">3</div>
+            <div class="map-item-mobile" style="left: 6%; top: 56%">3</div>
+            <div class="map-item-mobile" style="left: 34%; top: 40%">7</div>
+            <div class="map-item-mobile" style="left: 75%; top: 38%">4</div>
+            @@include("../elements/map-item.html", { name: "[ ПС 220 кВ Мирная"
+            })
+        </div>
+
+        <a
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            href="#"
+            class="btn map__btn map__btn_mobile"
+        >
+            смотреть все
+        </a>
+    </div>
+</section>

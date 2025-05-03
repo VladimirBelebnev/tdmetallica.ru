@@ -1,0 +1,17 @@
+// Containers
+
+.container {
+    width: 100%;
+    max-width: calc($containerWidth + $containerPaddingDesk * 2);
+    padding: 0 $containerPaddingDesk;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        max-width: calc($containerWidth + $containerPaddingMob * 2);
+        padding: 0 $containerPaddingMob;
+    }
+}

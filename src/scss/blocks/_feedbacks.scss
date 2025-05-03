@@ -1,0 +1,160 @@
+// Feedbacks Styles
+
+.feedbacks {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2.6875rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__title {
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: flex-end;
+    }
+
+    &__slider-buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    &__slider-btn {
+        height: 3.75rem;
+        width: 3.75rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: $primaryColor;
+
+        svg {
+            stroke: $white;
+        }
+
+        &.swiper-button-disabled {
+            background: $white;
+
+            svg {
+                stroke: $primaryColor;
+            }
+        }
+    }
+
+    &__slider {
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    &__pagination {
+        display: none;
+        justify-content: center;
+        margin-top: 1.25rem;
+    }
+}
+
+.card {
+    &_feedback &__title {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &__text {
+        margin-bottom: 1.25rem;
+    }
+
+    &_feedback &__text {
+        line-height: 110%;
+    }
+
+    &__link {
+        text-align: right;
+    }
+
+    &__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        text-transform: uppercase;
+        line-height: 110%;
+        color: $primaryColor;
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 0.875rem;
+            width: 0.875rem;
+            background: url("../img/icons/arrow-right-top-blue.svg") no-repeat
+                center / 100%;
+            transition: 0.3s;
+        }
+
+        &::before {
+            content: "";
+            height: 0.0625rem;
+            width: 0;
+            background: $primaryColor;
+            position: absolute;
+            top: calc(100% + 0.25rem);
+            left: 0;
+            transition: 0.3s;
+        }
+
+        &:hover::before {
+            width: calc(100% + 0.125rem);
+        }
+
+        &:hover::after {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 991px) {
+    .feedbacks {
+        &__pagination {
+            display: flex;
+        }
+
+        &__slider-buttons {
+            display: none;
+        }
+
+        &__wrap {
+            display: flex;
+        }
+
+        &__header {
+            padding-top: 4rem;
+            display: flex;
+
+            div {
+                display: none;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .feedbacks {
+        margin-bottom: 5rem;
+
+        &__header {
+            padding-top: 1.6875rem;
+        }
+    }
+}

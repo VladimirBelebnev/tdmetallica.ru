@@ -1,0 +1,50 @@
+.contacts {
+    width: 100%;
+    margin-top: 3.75rem;
+    margin-bottom: 8.75rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 7.9375rem;
+    }
+
+    &__title {
+        margin-bottom: 3.75rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 7rem;
+
+        li {
+            color: $primaryColor;
+            font-size: 2rem;
+            font-weight: $semibold;
+
+            a {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    height: 0.1875rem;
+                    width: 0;
+                    background: $primaryColor;
+                    position: absolute;
+                    top: calc(100% + 0.5rem);
+                    left: 0;
+                    transition: 0.3s;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}

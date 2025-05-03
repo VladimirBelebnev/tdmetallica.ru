@@ -1,0 +1,523 @@
+// Utils Classes
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+// Text Styles
+
+.blue {
+    color: $primaryColor;
+    display: inline;
+}
+
+// Text Styles
+
+.page-title {
+    font-weight: $normal;
+    font-size: 8.5rem;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.block-title {
+    font-size: 3rem;
+    line-height: 100%;
+}
+
+.descr {
+    line-height: 140%;
+    font-weight: $semibold;
+}
+
+.caption {
+    line-height: 110%;
+    font-weight: $semibold;
+}
+
+@media all and (max-width: 1550px) {
+    .page-title {
+        font-size: 6rem;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .page-title {
+        font-size: 4rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .block-title {
+        font-size: 1.5rem;
+    }
+}
+
+// Br Styles
+
+// Pop Ups Styles
+
+// Inputs Styles
+
+.input {
+    background: $white;
+    font-weight: $medium;
+    font-size: 1.25rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    padding: 1.4375rem 1.875rem;
+    color: $fontColor;
+    width: 100%;
+    transition: 0.3s;
+
+    &::placeholder {
+        color: $fontColor;
+    }
+
+    &_textarea {
+        height: 9.75rem;
+        resize: none;
+    }
+
+    &:focus {
+        box-shadow: 0 0 1rem $primaryShadow;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .input {
+        padding: 0.9375rem 0.875rem;
+        font-size: 1rem;
+    }
+}
+
+// Checkboxes Styles
+
+.checkbox {
+    &__label {
+        line-height: 110%;
+        display: flex;
+        gap: 0.5rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            min-width: 1.38rem;
+            height: 1.38rem;
+            border: 2px solid $fontColor;
+            display: inline-block;
+        }
+
+        &::after {
+            content: "";
+            min-width: 1.38rem;
+            height: 1.38rem;
+            background: black url("../img/icons/checked.svg") no-repeat center /
+                60%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        a {
+            display: inline;
+        }
+    }
+
+    &__input:checked + &__label::after {
+        opacity: 1;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .checkbox {
+        &__label {
+            font-size: 0.875rem;
+
+            &::before {
+                min-width: 0.875rem;
+                width: 0.875rem;
+                height: 0.875rem;
+            }
+
+            &::after {
+                min-width: 0.875rem;
+                width: 0.875rem;
+                height: 0.875rem;
+            }
+        }
+    }
+}
+
+// Buttons Styles
+
+.link {
+    color: $primaryColor;
+    text-decoration: underline;
+    line-height: 110%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.675rem;
+    padding: 1rem 1.75rem;
+    background: $primaryColor;
+    line-height: 110%;
+    text-transform: uppercase;
+    font-weight: $semibold;
+    color: $white;
+
+    &::after {
+        content: "";
+        height: 0.875rem;
+        min-width: 0.875rem;
+        width: 0.875rem;
+        background: url("../img/icons/arrow-right-top.svg") no-repeat center /
+            100%;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: $white;
+        background: $secondaryColor;
+    }
+
+    &_lightblue {
+        background: $blue1;
+        color: $primaryColor;
+
+        &::after {
+            background-image: url("../img/icons/arrow-right-top-blue.svg");
+        }
+
+        &:hover::after {
+            background-image: url("../img/icons/arrow-right-top.svg");
+        }
+    }
+
+    &:hover::after {
+        transform: rotate(45deg);
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .btn {
+        padding: 0.875rem;
+
+        &::after {
+            min-width: 0.6875rem;
+            width: 0.6875rem;
+            height: 0.6875rem;
+        }
+    }
+}
+
+// Logo Styles
+
+.logo {
+    height: 2.8125rem;
+    min-width: 16rem;
+    width: 16rem;
+    background: url("../img/general/logo.svg") no-repeat center / 100%;
+
+    &_white {
+        background-image: url("../img/general/logo-white.svg");
+    }
+}
+
+@media all and (max-width: 600px) {
+    .logo {
+        min-width: 10.625rem;
+        width: 10.625rem;
+        height: 1.875rem;
+    }
+}
+
+// Pseudo Styles
+
+.pseudo {
+    width: calc(100% - $containerPaddingDesk * 2);
+    position: absolute;
+    top: 0;
+    left: $containerPaddingDesk;
+    background: url("../img/icons/pseudo.svg") no-repeat top left / 100%
+        1.4375rem;
+    padding-top: 1.375rem;
+    padding-left: 0.625rem;
+
+    &__text {
+        line-height: 100%;
+        color: $gray1;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .pseudo {
+        width: calc(100% - $containerPaddingMob * 2);
+        left: $containerPaddingMob;
+        height: 0.75rem;
+        background-image: url("../img/icons/pseudo-mobile.svg");
+        padding-top: 0;
+
+        &__text {
+            display: none;
+        }
+    }
+}
+
+// Card Styles
+
+.card {
+    padding: 1.875rem;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+        font-size: 2rem;
+        line-height: 100%;
+        margin-bottom: 1.25rem;
+    }
+
+    &__text {
+        margin-bottom: 1.875rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .card {
+        padding: 1.25rem;
+
+        &__title {
+            font-size: 1.25rem;
+            margin-bottom: 0.875rem;
+        }
+    }
+}
+
+// Menu Styles
+
+.menu {
+    min-width: 1.6875rem;
+    width: 1.6875rem;
+    height: 1.125rem;
+    position: relative;
+
+    &__item {
+        width: 100%;
+        height: 0.125rem;
+        background: $black;
+        position: absolute;
+        left: 0;
+        transform-origin: 44%;
+        transition: 0.3s;
+    }
+
+    &__item:nth-child(1) {
+        top: 0;
+    }
+
+    &__item:nth-child(2) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    &__item:nth-child(3) {
+        bottom: 0;
+    }
+
+    &_active &__item:nth-child(2) {
+        opacity: 0;
+    }
+
+    &_active &__item:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    &_active &__item:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 50%;
+    }
+}
+
+// Breadcrumbs Styles
+
+.breadcrumbs {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+
+        li:not(:last-child) {
+            &::after {
+                content: "/";
+                display: inline-block;
+            }
+        }
+
+        a {
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 0.0625rem;
+                width: 0;
+                background: $primaryColor;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                transition: 0.3s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    &__current {
+        color: $primaryColor;
+    }
+}
+
+// Table Styles
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr:nth-child(odd) {
+        background: #ebf2fa;
+    }
+
+    td,
+    th {
+        padding: 0.875rem;
+        font-weight: $semibold;
+    }
+
+    th {
+        font-weight: $bold;
+    }
+}
+
+// Slider Buttons
+
+.slider-btn {
+    height: 3.75rem;
+    width: 3.75rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: $primaryColor;
+
+    svg {
+        stroke: $white;
+    }
+
+    &.swiper-button-disabled {
+        background: $white;
+
+        svg {
+            stroke: $primaryColor;
+        }
+
+        &:hover {
+            background: $white;
+        }
+    }
+
+    &:hover {
+        background: $secondaryColor;
+    }
+
+    &:hover::after {
+        transform: rotate(45deg);
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+// Content Styles
+
+.content {
+    font-weight: $semibold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    b {
+        font-weight: $bold;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    ul,
+    ol {
+        margin-left: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        li {
+            list-style-type: disc;
+        }
+    }
+
+    ol {
+        li {
+            list-style-type: decimal;
+        }
+    }
+}

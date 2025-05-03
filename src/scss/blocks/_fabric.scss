@@ -1,0 +1,64 @@
+// Fabric Styles
+
+.fabric {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2.6875rem;
+    }
+
+    &__img-link {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__title {
+        margin-bottom: 3.125rem;
+    }
+
+    &__items {
+        & > *:not(:last-child) {
+            padding-bottom: 1.25rem;
+            border-bottom: 0.0625rem solid $gray1;
+            margin-bottom: 1.25rem;
+        }
+
+        li {
+            line-height: 110%;
+        }
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1100px) {
+    .fabric {
+        &__row {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2.5rem;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .fabric {
+        margin-bottom: 5rem;
+        &__row {
+            padding-top: 1.6875rem;
+        }
+
+        &__title {
+            margin-bottom: 2.5rem;
+        }
+
+        &__img-link,
+        &__img {
+            width: 100%;
+        }
+    }
+}

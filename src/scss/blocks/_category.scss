@@ -1,0 +1,41 @@
+.category {
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 8.75rem;
+
+    &__title {
+        margin-bottom: 3.75rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1.25rem;
+    }
+}
+
+.category-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 100%;
+    padding: 1.875rem 2.5rem 2.5rem;
+    background: $white;
+    color: $primaryColor;
+
+    svg {
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background: $primaryColor;
+        color: $white;
+
+        svg {
+            stroke: $white;
+            transform: rotate(45deg);
+        }
+    }
+}

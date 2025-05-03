@@ -1,0 +1,36 @@
+.about {
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 8.75rem;
+
+    &__title {
+        margin-bottom: 2.5rem;
+    }
+
+    &__descr {
+        max-width: 48.375rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+.about-item {
+    background: $white;
+    padding: 1.875rem;
+
+    &__num {
+        font-size: 3rem;
+        font-weight: $semibold;
+        color: $primaryColor;
+        margin-bottom: 0.625rem;
+    }
+
+    &__text {
+    }
+}

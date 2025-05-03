@@ -1,0 +1,42 @@
+.tech {
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 9.1875rem;
+
+    &__title {
+        font-size: 6rem;
+        margin-bottom: 3.25rem;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    &__img {
+        padding-right: 2.3125rem;
+    }
+
+    &__list {
+        margin-right: 1.25rem;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 110%;
+        }
+
+        & > *:not(:last-child) {
+            padding-bottom: 0.875rem;
+            margin-bottom: 0.875rem;
+            border-bottom: 0.0625rem solid $gray1;
+        }
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

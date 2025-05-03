@@ -1,0 +1,15 @@
+.projects-page {
+    width: 100%;
+    margin-bottom: 8.75rem;
+    margin-top: 1.875rem;
+
+    &__title {
+        margin-bottom: 3.75rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3.75rem 1.25rem;
+    }
+}

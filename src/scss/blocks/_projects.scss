@@ -1,0 +1,93 @@
+// Projects Styles
+
+.projects {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__header {
+        padding-top: 2.6875rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+        margin-bottom: 2.5rem;
+    }
+
+    &__btn {
+        max-width: 23.4375rem;
+
+        &_mobile {
+            display: none;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 1.25rem;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+.card {
+    &_project &__title {
+        margin-bottom: 1.25rem;
+    }
+
+    &__img {
+        margin-bottom: 1.25rem;
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1400px) {
+    .projects {
+        &__header {
+            padding-top: 4rem;
+            grid-template-columns: 1fr;
+        }
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .projects {
+        &__btn {
+            display: none;
+
+            &_mobile {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 769px) {
+    .projects {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .projects {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+
+        &__header {
+            padding-top: 1.6875rem;
+        }
+    }
+
+    .card {
+        &_project &__title {
+            margin-bottom: 0.875rem;
+        }
+    }
+}
