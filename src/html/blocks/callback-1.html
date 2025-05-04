@@ -23,9 +23,16 @@
                 <input
                     type="text"
                     placeholder="Ваш номер телефона"
-                    class="input"
+                    class="input tel"
                 />
-                <input type="file" placeholder="Ваш проект" class="input" />
+                <div class="file">
+                    <input type="file" id="file1" class="file__input" />
+                    <label for="file1" class="input file__label">
+                        <span class="file__text"> Ваш проект </span>
+                        <span class="blue file__blue"> Прикрепить файл </span>
+                    </label>
+                </div>
+                <!-- <input type="file" placeholder="Ваш проект" class="input" /> -->
                 <textarea
                     placeholder="Комментарий"
                     class="input input_textarea"

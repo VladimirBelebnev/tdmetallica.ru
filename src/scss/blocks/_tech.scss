@@ -17,6 +17,12 @@
         padding-right: 2.3125rem;
     }
 
+    &__img-link {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
     &__list {
         margin-right: 1.25rem;
 

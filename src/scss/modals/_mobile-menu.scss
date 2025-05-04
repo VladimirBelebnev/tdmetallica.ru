@@ -1,0 +1,66 @@
+.mobile-menu {
+    display: none;
+    height: calc(100vh - 4.25rem);
+    width: 100%;
+    position: fixed;
+    top: 4.25rem;
+    left: 0;
+    background: $mainBg;
+    padding-top: 3rem;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        font-weight: $semibold;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 0.125rem;
+            width: 0;
+            background: $primaryColor;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 0.3s;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+
+    &__contacts-list {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        li {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.25rem;
+
+            &::before {
+                content: "";
+                height: 1.25rem;
+                width: 0.125rem;
+                background: $primaryColor;
+            }
+        }
+    }
+
+    .search {
+        width: 100%;
+    }
+}

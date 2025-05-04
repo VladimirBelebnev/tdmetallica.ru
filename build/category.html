@@ -127,16 +127,13 @@
 
             <ul class="header__list">
                 <li>
-                    <span class="header__text"> г. Санкт-Петербург </span>
+                    <span class="header__text">
+                        г. Москва, пр-кт Олимпийский, д.16, стр.5
+                    </span>
                 </li>
                 <li>
                     <a href="mailto:info@tdmetallica.ru" class="header__link">
                         info@tdmetallica.ru
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+78126706280" class="header__link">
-                        +7 (812) 670-62-80
                     </a>
                 </li>
                 <li>
@@ -354,9 +351,15 @@
                 <input
                     type="text"
                     placeholder="Ваш номер телефона"
-                    class="input"
+                    class="input tel"
                 />
-                <input type="file" placeholder="Ваш проект" class="input" />
+                <div class="file">
+                    <input type="file" id="file1" class="file__input" />
+                    <label for="file1" class="input file__label">
+                        <span class="file__text"> Ваш проект </span>
+                        <span class="blue file__blue"> Прикрепить файл </span>
+                    </label>
+                </div>
                 <textarea
                     placeholder="Комментарий"
                     class="input input_textarea"
@@ -568,12 +571,126 @@
                 © ООО "ТД МЕТАЛЛИКА" 2015 — 2025
             </span>
 
-            <p class="footer__develop">
+            <!-- <p class="footer__develop">
                 Разработка сайта - <a href="#" target="_blank">Pixel.Agency</a>
-            </p>
+            </p> -->
         </div>
     </div>
 </footer>
+
+<div class="mobile-menu">
+    <div class="container">
+        <ul class="mobile-menu__list">
+            <li>
+                <a href="#" class="mobile-menu__link"> Каталог </a>
+            </li>
+            <li>
+                <a href="#" class="mobile-menu__link"> Доставка </a>
+            </li>
+            <li>
+                <a href="#" class="mobile-menu__link"> Проекты </a>
+            </li>
+            <li>
+                <a href="#" class="mobile-menu__link"> Отзывы </a>
+            </li>
+            <li>
+                <a href="#" class="mobile-menu__link"> О компании </a>
+            </li>
+            <li>
+                <a href="#" class="mobile-menu__link"> Контакты </a>
+            </li>
+        </ul>
+
+        <div class="search-wrap">
+            <div class="search">
+                <input
+                    type="text"
+                    placeholder="Поиск по каталогу"
+                    class="search__input"
+                />
+            </div>
+
+            <div class="drop-down">
+                <ul class="drop-down__list">
+                    <li>
+                        <a href="#" class="drop-down__link">
+                            У35-4+9
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                stroke="#00307D"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                    stroke="inherit"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="drop-down__link">
+                            У35-4+9
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                stroke="#00307D"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                    stroke="inherit"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="drop-down__link">
+                            У35-4+9
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                stroke="#00307D"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                    stroke="inherit"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="btn drop-down__btn"> все результаты </a>
+            </div>
+        </div>
+
+        <ul class="mobile-menu__contacts-list">
+            <li>
+                <a href="tel:+78007071147" class="mobile-menu__link">
+                    +7 (800) 707-11-47
+                </a>
+            </li>
+            <li>
+                <a href="mailto:info@tdmetallica.ru" class="mobile-menu__link">
+                    info@tdmetallica.ru
+                </a>
+            </li>
+            <li>
+                <a href="#" class="mobile-menu__link"> г. Москва </a>
+            </li>
+        </ul>
+    </div>
+</div>
 
         </div>
 

@@ -67,17 +67,17 @@ $(() => {
     //     validate(input.closest("form"));
     // });
 
-    const forms = document.querySelectorAll(".wpcf7");
+    // const forms = document.querySelectorAll(".wpcf7");
 
-    forms.forEach((item) => {
-        item.addEventListener("wpcf7mailsent", (event) => {
-            const form = event.currentTarget;
+    // forms.forEach((item) => {
+    //     item.addEventListener("wpcf7mailsent", (event) => {
+    //         const form = event.currentTarget;
 
-            if (form.closest("#form-modal")) {
-                $(form.closest("#form-modal")).iziModal("close");
-            }
+    //         if (form.closest("#form-modal")) {
+    //             $(form.closest("#form-modal")).iziModal("close");
+    //         }
 
-            $("#thank-modal").iziModal("open");
-        });
-    });
+    //         $("#thank-modal").iziModal("open");
+    //     });
+    // });
 });
