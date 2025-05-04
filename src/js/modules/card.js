@@ -1,4 +1,5 @@
 import $ from "jquery";
+import fslightbox from "fslightbox";
 
 const img = document.querySelector(".project-gallery__main");
 // const video = document.querySelector(".gallery__video-link");
@@ -26,7 +27,7 @@ $(".project-gallery__item").on("click", (event) => {
     // imgTag.src = src;
     imgTag.src = src;
     img.href = src;
-    img.dispatchEvent(new CustomEvent("changeimg"));
+    refreshFsLightbox();
     // }
 
     // $(".project-gallery__item").removeClass("active");
