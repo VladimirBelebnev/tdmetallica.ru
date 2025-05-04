@@ -4,27 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/main.css" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="./img/favicon/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="./img/favicon/favicon.svg"
-        />
-        <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./img/favicon/apple-touch-icon.png"
-        />
-        <meta name="apple-mobile-web-app-title" content="TGS" />
-        <link rel="manifest" href="./img/favicon/site.webmanifest" />
         <title>Главная</title>
     </head>
     <body>
@@ -33,352 +17,580 @@
         <div class="wrapper">
             <header class="header">
     <div class="container">
-        <div class="header__left">
-            <a href="/" class="logo"></a>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li>
-                        <a href="/about.html">О компании</a>
-                    </li>
-                    <li>
-                        <a href="/equipment.html">Оборудование</a>
-                    </li>
-                    <li>
-                        <a href="/contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header__top">
+            <div class="header__left">
+                <a href="/" class="logo header__logo"></a>
+
+                <nav>
+                    <ul class="header__list">
+                        <li>
+                            <a href="#" class="header__link">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="#" class="btn header__callback"> обратный звонок </a>
+
+            <button class="header__menu menu">
+                <span class="menu__item"></span>
+                <span class="menu__item"></span>
+                <span class="menu__item"></span>
+            </button>
         </div>
 
-        <div class="header__right">
-            <a href="tel:+79998887766" class="ic-phone header__phone">
-                +7 999 888-77-66
-            </a>
-            <button class="ic-burger header__menu"></button>
-            <div class="drop-down">
-                <ul class="drop-down__list">
-                    <li>
-                        <a href="./about.html" class="drop-down__link">
-                            О компании
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./equipment.html" class="drop-down__link">
-                            Оборудование
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contacts.html" class="drop-down__link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
+        <div class="header__bottom">
+            <div class="search-wrap">
+                <div class="search">
+                    <input
+                        type="text"
+                        placeholder="Поиск по каталогу"
+                        class="search__input"
+                    />
+                </div>
 
-                <a href="tel:+79998887766" class="ic-phone drop-down__phone">
-                    +7 999 888-77-66
-                </a>
+                <div class="drop-down">
+                    <ul class="drop-down__list">
+                        <li>
+                            <a href="#" class="drop-down__link">
+                                У35-4+9
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    stroke="#00307D"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                        stroke="inherit"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop-down__link">
+                                У35-4+9
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    stroke="#00307D"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                        stroke="inherit"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop-down__link">
+                                У35-4+9
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    stroke="#00307D"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                        stroke="inherit"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn drop-down__btn"> все результаты </a>
+                </div>
             </div>
+
+            <ul class="header__list">
+                <li>
+                    <span class="header__text"> г. Санкт-Петербург </span>
+                </li>
+                <li>
+                    <a href="mailto:info@tdmetallica.ru" class="header__link">
+                        info@tdmetallica.ru
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+78126706280" class="header__link">
+                        +7 (812) 670-62-80
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+78007071147" class="header__link">
+                        +7 (800) 707-11-47
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
 
 
-            <main class="main"><section class="catalog">
+            <main class="main">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ul class="breadcrumbs__list">
+                            <li>
+                                <a href="/"> Главная </a>
+                            </li>
+                            <li class="breadcrumbs__current">Каталог</li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+    function redirect(url) {
+        window.location.href = url;
+    }
+</script>
+
+<section class="catalog">
     <div class="container">
-        <ul class="breadcrums">
-            <li>
-                <a href="#" class="breadcrums__item"> Главная </a>
-            </li>
+        <header class="catalog__header">
+            <h1
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                class="page-title catalog__title"
+            >
+                каталог
+            </h1>
 
-            <li>
-                <a href="#" class="breadcrums__item"> Оборудование </a>
-            </li>
+            <div
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                class="catalog__often"
+            >
+                <span class="blue catalog__often-text"> Часто ищут </span>
 
-            <li>
-                <span class="breadcrums__item">
-                    Дноуглубительное оборудование
-                </span>
-            </li>
-        </ul>
+                <div class="catalog__sort-buttons">
+                    <button class="catalog__sort-btn">Ростверки</button>
+                    <button class="catalog__sort-btn">
+                        Фундаментные балки
+                    </button>
+                </div>
+            </div>
+        </header>
 
-        <h1 class="section-title catalog__title">
-            <span class="blue">Дноуглубительное</span> оборудование
-        </h1>
+        <div
+            data-aos="fade"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            class="catalog__items"
+        >
+            <div onclick="redirect('/category.html')" class="catalog-item">
+                <header class="catalog-item__header">
+                    <a href="#" class="blue catalog-item__name">
+                        Металлические <br />
+                        опоры ЛЭП
+                    </a>
 
-        <div class="catalog__items">
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-1.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Фрезерный земснаряд </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
+                    <a href="#" class="catalog-item__link">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M2 30L30 2M30 2V28.1333M30 2H3.86667"
+                                stroke="#00307D"
+                                stroke-width="4"
+                            />
+                        </svg>
+                    </a>
+                </header>
 
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
+                <ul class="catalog-item__list catalog-item__list_double">
+                    <li><a href="#">Анкерно-угловые</a></li>
+                    <li><a href="#">Новой унификации</a></li>
+                    <li><a href="#">Промежуточные</a></li>
+                    <li><a href="#">Переходные</a></li>
+                </ul>
+            </div>
 
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-2.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Гидравлические двигатели </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
+            <div onclick="redirect('/category.html')" class="catalog-item">
+                <header class="catalog-item__header">
+                    <a href="#" class="blue catalog-item__name">
+                        Стальные опоры ОРУ
+                    </a>
 
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
+                    <a href="#" class="catalog-item__link">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M2 30L30 2M30 2V28.1333M30 2H3.86667"
+                                stroke="#00307D"
+                                stroke-width="4"
+                            />
+                        </svg>
+                    </a>
+                </header>
 
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-3.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Грунтонасосные установки </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
+                <ul class="catalog-item__list catalog-item__list_double">
+                    <li><a href="#">Для обычных районов</a></li>
+                    <li><a href="#">Для северных районов</a></li>
+                </ul>
+            </div>
 
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
+            <div onclick="redirect('/category.html')" class="catalog-item">
+                <header class="catalog-item__header">
+                    <a href="#" class="blue catalog-item__name">
+                        Прожекторные мачты <br />
+                        и молниеотводы
+                    </a>
 
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-4.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Рамоподъемные устройства </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
+                    <a href="#" class="catalog-item__link">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M2 30L30 2M30 2V28.1333M30 2H3.86667"
+                                stroke="#00307D"
+                                stroke-width="4"
+                            />
+                        </svg>
+                    </a>
+                </header>
 
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
+                <ul class="catalog-item__list catalog-item__list_double">
+                    <li><a href="#">Прожекторные мачты</a></li>
+                    <li><a href="#">Молниеотводы</a></li>
+                </ul>
+            </div>
 
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-1.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Фрезерный земснаряд </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
+            <div onclick="redirect('/category.html')" class="catalog-item">
+                <header class="catalog-item__header">
+                    <a href="#" class="blue catalog-item__name">
+                        Металлоконструкции
+                    </a>
 
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
+                    <a href="#" class="catalog-item__link">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M2 30L30 2M30 2V28.1333M30 2H3.86667"
+                                stroke="#00307D"
+                                stroke-width="4"
+                            />
+                        </svg>
+                    </a>
+                </header>
 
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-2.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Гидравлические двигатели </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
-
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
-
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-3.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Грунтонасосные установки </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
-
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
-
-            <div data-link="./card.html" class="service">
-    <div class="service__img-wrap">
-        <img src="./img/services/service-4.png" alt="" class="service__img" />
-    </div>
-    <div class="service__text-wrap">
-        <div class="service__left">
-            <span class="service__title"> Рамоподъемные устройства </span>
-            <p class="caption service__subtitle">Дноуглубительное оборудование</p>
-        </div>
-
-        <a href="#" class="btn ic-arrow-diagonal service__link"></a>
-    </div>
-</div>
-
+                <ul class="catalog-item__list">
+                    <li>
+                        <a href="#"> Для железобетонных опор ВЛ 35-750кВ </a>
+                    </li>
+                    <li>
+                        <a href="#">Для железобетонных порталов ОРУ 35-500кВ</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Свайных фундаментов для стальных опор ВЛ
+                            35-500кВ</a
+                        >
+                    </li>
+                    <li><a href="#">Опор под оборудование ОРУ 35-750кВ</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
-</main>
+
+                <div class="callback">
+    <div class="container">
+        <div class="pseudo"></div>
+
+        <h2
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="block-title callback__title"
+        >
+            Получите
+            <span class="blue">коммерческое предложение с расчётом</span>
+        </h2>
+
+        <div
+            data-aos="zoom-out"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+            class="callback__form"
+        >
+            <div class="callback__wrap">
+                <input type="text" placeholder="Ваше ФИО" class="input" />
+                <input type="text" placeholder="Ваша почта" class="input" />
+                <input
+                    type="text"
+                    placeholder="Ваш номер телефона"
+                    class="input"
+                />
+                <input type="file" placeholder="Ваш проект" class="input" />
+                <textarea
+                    placeholder="Комментарий"
+                    class="input input_textarea"
+                ></textarea>
+                <button class="btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </div>
+
+            <div class="checkbox">
+                <input
+                    type="checkbox"
+                    hidden
+                    id="agree1"
+                    class="checkbox__input"
+                />
+                <label for="agree1" class="checkbox__label">
+                    <span>
+                        Даю согласие на обработку
+                        <a href="#">персональных данных</a>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </main>
 
             <footer class="footer">
     <div class="container">
         <div class="footer__top">
             <div class="footer__column">
-                <a href="#" class="logo logo_white"></a>
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li>
-                            <a href="./about.html" class="footer__link"
-                                >О компании</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./equipment.html" class="footer__link"
-                                >Оборудование</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./contacts.html" class="footer__link"
-                                >Контакты</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+                <h3 class="footer__list-title">Информация</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> Доставка </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Проекты </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__list-title">Компания</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> О компании </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Партнёры </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Отзывы </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__list-title">Контакты</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="tel:+78126706280" class="footer__link">
+                            +7 (812) 670-62-80
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="mailto:info@tdmetallica.ru"
+                            class="footer__link"
+                        >
+                            info@tdmetallica.ru
+                        </a>
+                    </li>
+                    <li>г. Москва, ул. Большая Полянка, д. 42</li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6ef60050c3581ea6de63ef5c6f272b24c2c3808e57dbaf08b38cef32e5792e2&amp;source=constructor"
+                    width="306"
+                    height="150"
+                    frameborder="0"
+                ></iframe>
+            </div>
+        </div>
+
+        <div class="footer__middle">
+            <div class="footer__column">
+                <h3 class="footer__list-title">Металлические опоры ЛЭП</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> 110 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 220 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 330 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 35 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 500 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 750КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Анккерно-угловые </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Промежуточные </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Переходные </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Новой унификации </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="footer__column">
-                <nav class="footer__nav footer__nav_mobile">
-                    <ul class="footer__list">
-                        <li>
-                            <a href="./about.html" class="footer__link"
-                                >О компании</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./equipment.html" class="footer__link"
-                                >Оборудование</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./contacts.html" class="footer__link"
-                                >Контакты</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+                <h3 class="footer__list-title">Металлоконструкции</h3>
 
-                <div class="footer__contacts-wrap">
-                    <a href="tel:+79998887766" class="ic-phone footer__phone">
-                        +7 999 888-77-66
-                    </a>
-                    <a
-                        href="mailto:zakaz@tgs64.ru"
-                        class="ic-mail footer__email"
-                    >
-                        zakaz@tgs64.ru
-                    </a>
-                </div>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для железобетонных опор ВЛ 35-750 КВ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Свайных фундаментов для стальных опор ВЛ 35-500КВ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для железобетонных порталов ОРУ 350-500КВ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Опор под оборудование ОРУ 35-750КВ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__list-title">Стальные порталы ОРУ</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для обычных районов
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для северных районов
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__list-title">
+                    Прожекторные мачты и молниеотводы
+                </h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> Молниеотводы </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Партнёры </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Прожекторные матчи
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="logo logo_white footer__logo"></a>
             </div>
         </div>
 
         <div class="footer__bottom">
-            <div class="footer__column">
-                <p class="footer__rights">
-                    Общество с ограниченной ответственностью «ТРЕСТ
-                    ГИДРОСТРОЙ-64» (ООО «ТГС-64») <br />
-                    ОГРН 1216400012730, ИНН 6449101044 <br />
-                    Юр. адрес: 410002, Саратовская обл., г. Саратов, ул. им.
-                    Чернышевского Н.Г., 203
-                </p>
-            </div>
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6ef60050c3581ea6de63ef5c6f272b24c2c3808e57dbaf08b38cef32e5792e2&amp;source=constructor"
+                width="306"
+                height="150"
+                frameborder="0"
+            ></iframe>
 
-            <div class="footer__column">
-                <a href="#" class="footer__rights-link">
-                    Политика конфиденциальности
-                </a>
-                <a href="#" class="footer__rights-link">
-                    Пользовательское соглашение
-                </a>
-                <a href="https://newway-studio.ru/" class="footer__develop">
-                    Сайт разработан студией NewWay
-                </a>
-            </div>
+            <a
+                href="#"
+                class="logo logo_white footer__logo footer__logo_mobile"
+            ></a>
+
+            <a href="#" class="footer__policy"> Политика конфиденциальности </a>
+
+            <span class="footer__rights">
+                © ООО "ТД МЕТАЛЛИКА" 2015 — 2025
+            </span>
+
+            <p class="footer__develop">
+                Разработка сайта - <a href="#" target="_blank">Pixel.Agency</a>
+            </p>
         </div>
     </div>
 </footer>
-
-<div
-    class="modal form-modal"
-    id="form-modal"
-    data-iziModal-title="Заказать звонок"
->
-    <button class="ic-cross modal__skip"></button>
-    <form class="form">
-    <h2 class="section-title form__title">Заказать звонок</h2>
-
-    <div class="form__grid">
-        <input
-            name="name"
-            type="text"
-            placeholder="Имя"
-            required
-            class="input form__input"
-        />
-        <input
-            name="tel"
-            type="text"
-            placeholder="Телефон"
-            required
-            class="input tel form__input"
-        />
-        <input
-            name="email"
-            type="text"
-            placeholder="E-mail"
-            required
-            class="input form__input"
-        />
-        <textarea
-            name="message"
-            placeholder="Комментарий"
-            class="input form__textarea"
-        ></textarea>
-    </div>
-
-    <p class="form__agree">
-        Нажимая "Отправить", вы даёте согласие на обработку персональных данных
-        в соответствии с <a href="#">политикой конфиденциальности</a
-        > и принимаете условия <a href="#">пользовательского соглашения</a>.
-    </p>
-
-    <button type="submit" class="btn btn_secondary form__btn">Отправить</button>
-</form>
-
-</div>
- <div
-    class="modal form-modal"
-    id="thank-modal"
-    data-iziModal-title="Заказать звонок"
->
-    <button class="ic-cross modal__skip"></button>
-    <div class="thank">
-        <i class="ic-check thank__icon"></i>
-        <span class="group-title thank__title"> Спасибо! </span>
-        <p class="subtitle thank__subtitle">
-            Мы получили Ваши данные и скоро наш менеджер с Вами свяжется, чтобы
-            обсудить детали
-        </p>
-    </div>
-</div>
-
 
         </div>
 
         <!-- Wrapper End -->
 
         <script src="./js/index.bundle.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

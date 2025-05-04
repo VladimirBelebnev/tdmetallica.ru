@@ -83,4 +83,40 @@ $(() => {
             nextEl: ".project-gallery__slider-btn_next",
         },
     });
+
+    const gallery1Slider = new Swiper(".gallery__slider-1", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+            el: ".gallery__pagination-1",
+        }
+    });
+
+    const gallery2Slider = new Swiper(".gallery__slider-2", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+            el: ".gallery__pagination-2",
+        }
+    });
+
+    const gallery3Slider = new Swiper(".gallery__slider-3", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+            el: ".gallery__pagination-3",
+        }
+    });
+
+    const projectMobileSlider = new Swiper(".project-page__slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+            el: ".project-page__pagination",
+        }
+    });
 });

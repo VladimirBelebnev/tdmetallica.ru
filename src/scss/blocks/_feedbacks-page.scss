@@ -1,7 +1,7 @@
 .feedbacks-page {
     width: 100%;
     margin-top: 1.875rem;
-    margin-bottom: 8.75rem;
+    margin-bottom: 8.75rem !important;
 
     &__title {
         margin-bottom: 3.75rem;
@@ -28,14 +28,14 @@
         color: $primaryColor;
         position: relative;
 
-        &::after {
-            content: "";
-            height: 0.875rem;
-            width: 0.875rem;
-            background: url("../img/icons/arrow-right-top-blue.svg") no-repeat
-                center / 100%;
-            transition: 0.3s;
-        }
+        // &::after {
+        //     content: "";
+        //     height: 0.875rem;
+        //     width: 0.875rem;
+        //     background: url("../img/icons/arrow-right-top-blue.svg") no-repeat
+        //         center / 100%;
+        //     transition: 0.3s;
+        // }
 
         &::before {
             content: "";
@@ -54,6 +54,39 @@
 
         &:hover::after {
             transform: rotate(45deg);
+        }
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1350px) {
+    .feedbacks-page {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .feedbacks-page {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .feedbacks-page {
+        margin-top: 0.625rem;
+        margin-bottom: 5rem !important;
+        &__title {
+            margin-bottom: 2.5rem;
+        }
+        &__items {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
         }
     }
 }

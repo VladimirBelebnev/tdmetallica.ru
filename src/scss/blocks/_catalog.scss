@@ -7,6 +7,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        gap: 2rem;
         margin-bottom: 3.75rem;
     }
 
@@ -14,6 +15,11 @@
         display: flex;
         align-items: center;
         gap: 1.25rem;
+        flex-wrap: wrap;
+
+        &_mobile {
+            display: none;
+        }
     }
 
     &__often-text {
@@ -24,6 +30,7 @@
     &__sort-buttons {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 1.25rem;
     }
 
@@ -56,7 +63,7 @@
     &__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem 3.75rem;
+        gap: 3.75rem 1.25rem;
     }
 }
 
@@ -67,6 +74,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1.25rem;
     cursor: pointer;
     transition: 0.3s;
 
@@ -89,6 +97,11 @@
 
         &_double {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        &_triple {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.875rem 0;
         }
 
         li {
@@ -142,5 +155,111 @@
 
     &:hover &__name {
         color: $white;
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1400px) {
+    .catalog {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .catalog {
+        &__header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .catalog {
+        margin-top: 0.625rem;
+        margin-bottom: 5rem;
+        &__often {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            background: $white;
+            padding: 1.25rem;
+            margin-top: 2.5rem;
+
+            &_mobile {
+                display: flex;
+            }
+        }
+
+        &__sort-buttons {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__sort-btn {
+            padding: 0;
+            background: transparent;
+            gap: 0.5rem;
+
+            &:hover {
+                color: $fontColor;
+                background: $white;
+            }
+            &::before {
+                background: $primaryColor;
+                height: 0.125rem;
+                min-width: 1.125rem;
+                width: 1.125rem;
+            }
+        }
+
+        &__header {
+            margin-bottom: 2.5rem;
+        }
+
+        &__items {
+            gap: 2.5rem;
+        }
+    }
+
+    .catalog-item {
+        padding: 1.25rem;
+        min-height: auto;
+
+        &__name {
+            font-size: 1.5rem;
+        }
+
+        &__link {
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        &__list {
+            &_double {
+                grid-template-columns: 1fr;
+            }
+
+            &_triple {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            li {
+                font-size: 1rem;
+                align-items: flex-start;
+
+                &::before {
+                    height: 0.125rem;
+                    min-width: 1.125rem;
+                    width: 1.125rem;
+                    transform: translate(0, 0.35rem);
+                }
+            }
+        }
     }
 }

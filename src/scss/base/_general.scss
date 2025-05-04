@@ -416,6 +416,14 @@
     }
 }
 
+@media all and (max-width: 600px) {
+    .breadcrumbs {
+        li {
+            font-size: 0.75rem;
+        }
+    }
+}
+
 // Table Styles
 
 table {
@@ -434,6 +442,14 @@ table {
 
     th {
         font-weight: $bold;
+    }
+}
+
+@media all and (max-width: 600px) {
+    td,
+    th {
+        font-size: 0.88rem;
+        vertical-align: top;
     }
 }
 
@@ -483,33 +499,35 @@ table {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    font-size: 1rem;
+    line-height: normal;
 
     b {
         font-weight: $bold;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 3em;
     }
 
     h3 {
-        font-size: 2.5rem;
+        font-size: 2.5em;
     }
 
     h4 {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     h5 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     ul,
     ol {
-        margin-left: 1.75rem;
+        margin-left: 1.75em;
         display: flex;
         flex-direction: column;
-        gap: 0.25rem;
+        gap: 0.25em;
         li {
             list-style-type: disc;
         }
@@ -519,5 +537,17 @@ table {
         li {
             list-style-type: decimal;
         }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .content {
+        font-size: 0.9rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .content {
+        font-size: 0.88rem;
     }
 }

@@ -4,26 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/main.css" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="./img/favicon/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="./img/favicon/favicon.svg"
-        />
-        <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./img/favicon/apple-touch-icon.png"
-        />
-        <meta name="apple-mobile-web-app-title" content="TGS" />
-        <link rel="manifest" href="./img/favicon/site.webmanifest" />
         <title>Главная</title>
     </head>
     <body>
@@ -32,368 +17,1036 @@
         <div class="wrapper">
             <header class="header">
     <div class="container">
-        <div class="header__left">
-            <a href="/" class="logo"></a>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li>
-                        <a href="/about.html">О компании</a>
-                    </li>
-                    <li>
-                        <a href="/equipment.html">Оборудование</a>
-                    </li>
-                    <li>
-                        <a href="/contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header__top">
+            <div class="header__left">
+                <a href="/" class="logo header__logo"></a>
+
+                <nav>
+                    <ul class="header__list">
+                        <li>
+                            <a href="#" class="header__link">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="#" class="btn header__callback"> обратный звонок </a>
+
+            <button class="header__menu menu">
+                <span class="menu__item"></span>
+                <span class="menu__item"></span>
+                <span class="menu__item"></span>
+            </button>
         </div>
 
-        <div class="header__right">
-            <a href="tel:+79998887766" class="ic-phone header__phone">
-                +7 999 888-77-66
-            </a>
-            <button class="ic-burger header__menu"></button>
-            <div class="drop-down">
-                <ul class="drop-down__list">
-                    <li>
-                        <a href="./about.html" class="drop-down__link">
-                            О компании
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./equipment.html" class="drop-down__link">
-                            Оборудование
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contacts.html" class="drop-down__link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
+        <div class="header__bottom">
+            <div class="search-wrap">
+                <div class="search">
+                    <input
+                        type="text"
+                        placeholder="Поиск по каталогу"
+                        class="search__input"
+                    />
+                </div>
 
-                <a href="tel:+79998887766" class="ic-phone drop-down__phone">
-                    +7 999 888-77-66
-                </a>
+                <div class="drop-down">
+                    <ul class="drop-down__list">
+                        <li>
+                            <a href="#" class="drop-down__link">
+                                У35-4+9
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    stroke="#00307D"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                        stroke="inherit"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop-down__link">
+                                У35-4+9
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    stroke="#00307D"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                        stroke="inherit"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="drop-down__link">
+                                У35-4+9
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    stroke="#00307D"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 15L15 1M15 1V14.0667M15 1H1.93333"
+                                        stroke="inherit"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn drop-down__btn"> все результаты </a>
+                </div>
             </div>
+
+            <ul class="header__list">
+                <li>
+                    <span class="header__text"> г. Санкт-Петербург </span>
+                </li>
+                <li>
+                    <a href="mailto:info@tdmetallica.ru" class="header__link">
+                        info@tdmetallica.ru
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+78126706280" class="header__link">
+                        +7 (812) 670-62-80
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+78007071147" class="header__link">
+                        +7 (800) 707-11-47
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
 
 
-            <main class="main main_about">
-                <section class="about about_page">
+            <main class="main">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ul class="breadcrumbs__list">
+                            <li>
+                                <a href="/"> Главная </a>
+                            </li>
+                            <li class="breadcrumbs__current">О компании</li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="about">
     <div class="container">
-        <h2 class="section-title about__title">
-            <span class="blue">О</span> компании
-        </h2>
+        <h1
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-offset="0"
+            class="page-title about__title"
+        >
+            О компании
+        </h1>
 
-        <div class="about__row">
-            <div class="about__column">
-                <div class="about__text-wrap">
-                    <p>
-                        Мы не просто поставляем оборудование, а предлагаем
-                        <b>комплексное решение</b> — от индивидуального подбора
-                        до сопровождения установки и запуска. Наши специалисты
-                        проводят расчёты технических характеристик,
-                        подготавливают проектную документацию и предоставляют
-                        сертификаты соответствия на всё оборудование.
-                    </p>
+        <div
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-offset="0"
+            data-aos-delay="100"
+            class="descr about__descr"
+        >
+            <p>
+                Наша компания занимается производством и реализацией
+                металлоконструкций <br />
+                и опор ЛЭП. Основные цели ООО «ТД МЕТАЛЛИКА» надежность,
+                качество
+                <br />
+                и доступность нашей продукции по всему миру
+            </p>
+        </div>
 
-                    <p>
-                        Имея более <b>10 лет практического опыта</b> работы с
-                        земснарядами, мы вышли на новый уровень — поставку
-                        судового и дноуглубительного оборудования. Сегодня мы
-                        можем смело назвать себя экспертами в этой сфере.
-                    </p>
-
-                    <p>
-                        <b>Компания ТГС-64</b> поставляет речное и морское
-                        дноуглубительное оборудование отечественного и
-                        зарубежного производства высокого качества по всей
-                        территории России. В ассортимент входят также запасные
-                        части и комплектующие, обеспечивающие бесперебойную
-                        работу оборудования.
-                    </p>
+        <div class="about__items">
+            <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                class="about-item"
+            >
+                <span class="about-item__num"> [ 2000 ] </span>
+                <div class="about-item__text">
+                    <p>Тонн металлоконструкций производим каждый месяц</p>
                 </div>
             </div>
 
-            <div class="about__column">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <a
-                            href="./img/about/slide-1.png"
-                            data-fslightbox="about-gallery"
-                            class="swiper-slide about__img-link"
-                        >
-                            <img
-                                src="./img/about/slide-1.png"
-                                alt=""
-                                class="about__img"
-                            />
-                        </a>
-                        <a
-                            href="./img/about/slide-1.png"
-                            data-fslightbox="about-gallery"
-                            class="swiper-slide about__img-link"
-                        >
-                            <img
-                                src="./img/about/slide-1.png"
-                                alt=""
-                                class="about__img"
-                            />
-                        </a>
-                        <a
-                            href="./img/about/slide-1.png"
-                            data-fslightbox="about-gallery"
-                            class="swiper-slide about__img-link"
-                        >
-                            <img
-                                src="./img/about/slide-1.png"
-                                alt=""
-                                class="about__img"
-                            />
-                        </a>
-                    </div>
-                    <div class="about__slider-pagination"></div>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                data-aos-delay="100"
+                class="about-item"
+            >
+                <span class="about-item__num"> [ 150 ] </span>
+                <div class="about-item__text">
+                    <p>Высококвалифицированных специалистов в нашем штате</p>
+                </div>
+            </div>
+
+            <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                data-aos-delay="200"
+                class="about-item"
+            >
+                <span class="about-item__num"> [ 15 ] </span>
+                <div class="about-item__text">
+                    <p>Лет успешной работы на рынке электроэнергетики</p>
+                </div>
+            </div>
+
+            <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                data-aos-delay="300"
+                class="about-item"
+            >
+                <span class="about-item__num"> [ 20 ] </span>
+                <div class="about-item__text">
+                    <p>Ключевых магистралей страны используют наши опоры ЛЭП</p>
                 </div>
             </div>
         </div>
-
-        <div class="block-pseudo"></div>
-        <div class="block-bg"></div>
     </div>
 </section>
 
-                <section class="achivements">
+                <section class="gallery">
     <div class="container">
-        <div class="achivement">
-    <i class="ic-search"></i>
-    <p class="achivement__text">Индивидуальный подбор оборудования</p>
-</div>
-
-        <div class="achivement">
-    <i class="ic-document"></i>
-    <p class="achivement__text">Готовим расчеты и техническую документацию</p>
-</div>
-
-        <div class="achivement">
-    <i class="ic-repair"></i>
-    <p class="achivement__text">Пуско-наладочные работы поставляемого оборудования</p>
-</div>
-
-        <div class="achivement">
-    <i class="ic-map"></i>
-    <p class="achivement__text">Логистическое сопровождение заказа</p>
-</div>
-
-    </div>
-</section>
-
-                <section class="cases">
-    <div class="container">
-        <header class="cases__header">
-            <h2 class="section-title cases__title">
-                <span class="blue">Реализованные</span> проекты
-            </h2>
-
-            <a href="./projects.html" class="ic-right-circle cases__link">
-                Смотреть все
+        <div class="pseudo"></div>
+        <div class="gallery__items">
+            <a
+                href="./img/gallery/1.png"
+                data-fslightbox="gallery-1"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/1.png"
+                    alt=""
+                    class="gallery__img"
+                />
             </a>
+            <a
+                href="./img/gallery/2.png"
+                data-fslightbox="gallery-1"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/2.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/3.png"
+                data-fslightbox="gallery-1"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/3.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/4.png"
+                data-fslightbox="gallery-1"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/4.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+        </div>
+
+        <div class="gallery__text">
+            <div
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                class="descr gallery__descr"
+            >
+                <p>
+                    Для большинства инженерных сооружений высокое качество – это
+                    залог бесперебойной работы и гарантия безопасности
+                    окружающих. Опоры ЛЭП, металлоконструкции ВЛ относятся
+                    именно к этой группе. Безаварийная и надежная работа
+                    электрических сетей, а также бесперебойное энергоснабжение
+                    объектов является главной целью строительства линий
+                    электропередач. Начиная строительство, важно ответственно
+                    подойти к выбору подрядных организаций. Только компании
+                    производители металлоконструкций с большим накопленным
+                    опытом производства и дорожащей своей репутацией следует
+                    доверять эту ответственную работу по производству
+                    металлоконструкций ЛЭП. Так вы гарантируете себе
+                    безопасность и спокойствие
+                </p>
+
+                <p>
+                    Если возникла необходимость заказать металлические опоры
+                    ЛЭП, то процесс изготовления лучше всего доверить профильным
+                    предприятиям. Наш завод представляет собой именно такое
+                    предприятие полного технологического цикла, основным
+                    направлением деятельности которого является изготовление
+                    именно этих инженерных сооружений
+                </p>
+
+                <p class="blue">
+                    ООО "ТД МЕТАЛЛИКА" - предприятие со стажем и опытом работы,
+                    мы являемся одним из основных производителей опор ЛЭП и
+                    металлоконструкций для ВЛ в России
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="profile">
+    <div class="container">
+        <div class="pseudo"></div>
+
+        <header class="profile__header">
+            <div></div>
+            <h2
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                class="block-title profile__title"
+            >
+                <span class="blue">Наш основной профиль деятельности</span> -
+                это серийное производство следующих металлоконструкций
+            </h2>
         </header>
 
-        <div class="cases__mobile-wrap">
-            <div class="cases__rows">
-                <article class="case-row">
-                    <span class="case-row__date"> 2023 </span>
-
-                    <div class="case-row__line"></div>
-
-                    <div class="case-row__main">
-                        <h3 class="case-row__title">
-                            Участие в проекте FPDG3, постройка земснаряда
-                            «Николай Русанов»
-                        </h3>
-
-                        <div class="case-row__text-wrap">
-                            <p>
-                                Мы участвовали в строительстве несамоходного
-                                фрезерного земснаряда «Николай Русанов» для
-                                дноуглубительных работ на Волго-Каспийском
-                                канале. Это головное судно серии, строящейся ООО
-                                «Стройлидерплюс» по заказу ФГУП «Росморпорт».
-                            </p>
-
-                            <p>
-                                Мы поставили грунтозаборное устройство с
-                                гидравлической трансмиссией, которое повысило
-                                эффективность и точность работ, а также
-                                увеличило производительность земснаряда в
-                                сложных условиях.
-                            </p>
-                        </div>
-
-                        <a
-                            href="./project.html"
-                            class="btn btn_outline case-row__btn"
-                        >
-                            Подробнее
-                        </a>
-                    </div>
-
-                    <img
-                        src="./img/cases/case-1.png"
-                        alt=""
-                        class="case-row__img"
-                    />
-                </article>
-
-                <article class="case-row">
-                    <span class="case-row__date">
-                        2024 <br />
-                        – <br />
-                        2025
-                    </span>
-
-                    <div class="case-row__line"></div>
-
-                    <div class="case-row__main">
-                        <h3 class="case-row__title">
-                            Участие в проекте 93.159А, постройка 6 земснарядов
-                        </h3>
-
-                        <div class="case-row__text-wrap">
-                            <p>
-                                С 2024 года мы участвуем в строительстве серии
-                                самоходных земснарядов 93.159А. Первый заложен
-                                18 апреля на площадке АО «ЮЦСС» по заказу АО
-                                «ГТЛК».
-                            </p>
-
-                            <p>
-                                Мы поставляем оборудование, заменяющее импортные
-                                аналоги: рыхлители, грунтозаборное устройство,
-                                систему погрузки, канатозаглубительное и свайное
-                                оборудование. Это обеспечивает надежность и
-                                эффективность дноуглубительных работ.
-                            </p>
-                        </div>
-
-                        <a
-                            href="./project.html"
-                            class="btn btn_outline case-row__btn"
-                        >
-                            Подробнее
-                        </a>
-                    </div>
-                </article>
+        <div class="profile__items">
+            <div class="profile-item">
+                <p>
+                    [ 1 ] Промежуточные, переходные и анкерные опоры ВЛ 35, 110,
+                    220, 330, 500, 750 кВ
+                </p>
             </div>
-
-            <a
-                href="./projects.html"
-                class="ic-right-circle cases__link cases__link_mobile"
-            >
-                Смотреть все
-            </a>
+            <div class="profile-item">
+                <p>
+                    [ 2 ] Металлоконструкции (траверсы, ростверки, тросостойки и
+                    др.)
+                </p>
+            </div>
+            <div class="profile-item">
+                <p>
+                    [ 3 ] Антенные опоры для радиорелейных и сотовых линий связи
+                </p>
+            </div>
+            <div class="profile-item">
+                <p>
+                    [ 4 ] Опоры наружного освещения, прожекторные мачты, башни
+                    связи
+                </p>
+            </div>
+            <div class="profile-item">
+                <p>[ 5 ] Прожекторные мачты и молниеотводы</p>
+            </div>
+            <div class="profile-item">
+                <p>[ 6 ] Все виды металлоконструкций ЛЭП</p>
+            </div>
         </div>
-
-        <div class="block-pseudo"></div>
-        <div class="block-bg"></div>
     </div>
 </section>
 
-                <section class="callback callback_about">
-    <h2 class="section-title callback__title">
-        <span class="blue">Наши</span> контакты
-    </h2>
+                <section class="gallery">
     <div class="container">
-        <div class="callback__column">
-            <div class="contacts-block">
-    <p class="contacts-block__descr">
-        Свяжитесь с нами — наши специалисты помогут подобрать оптимальное
-        решение для ваших задач, проконсультируют по оборудованию и условиям
-        поставки.
-    </p>
-
-    <div class="contact">
-        <i class="ic-phone"></i>
-        <div class="contact__text-wrap">
-            <span class="contact__name"> Телефон </span>
-            <a href="tel:+79998887766" class="contact__link">
-                +7 999 888-77-66
+        <div class="pseudo"></div>
+        <div class="gallery__items">
+            <a
+                href="./img/gallery/5.png"
+                data-fslightbox="gallery-2"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/5.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/6.png"
+                data-fslightbox="gallery-2"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/6.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/7.png"
+                data-fslightbox="gallery-2"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/7.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/8.png"
+                data-fslightbox="gallery-2"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/8.png"
+                    alt=""
+                    class="gallery__img"
+                />
             </a>
         </div>
-    </div>
 
-    <div class="contact">
-        <i class="ic-mail"></i>
-        <div class="contact__text-wrap">
-            <span class="contact__name"> Электронная почта </span>
-            <a href="mailto:zakaz@tgs64.ru" class="contact__link">
-                zakaz@tgs64.ru
-            </a>
+        <div class="gallery__text">
+            <h2
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                class="block-title gallery__title"
+            >
+                <span class="blue">Производственные мощности</span> <br />
+                компании
+            </h2>
+
+            <div
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                class="descr gallery__descr"
+            >
+                <p>
+                    Производство опор ЛЭП, опор освещения и пр. осуществляется
+                    на современном оборудовании с ЧПУ, которое представляет
+                    собой комплекс линий обработки, выполняющих
+                    последовательность операций согласно заданным программам. На
+                    нем осуществляется позиционирование и пробивка отверстий,
+                    обрубка по длине, маркировка деталей и т.д. В результате
+                    этих операций получаются высококачественные заготовки для
+                    опор металлоконструкций ЛЭП, отвечающие всем необходимым
+                    требованиям и стандартам
+                </p>
+
+                <p>
+                    Опыт работы и профессионализм специалистов конструкторского
+                    отдела позволяют за короткие сроки качественно и
+                    своевременно разработать техническую документацию в
+                    соответствии с пожеланиями заказчика
+                </p>
+
+                <p class="blue">
+                    Производственные мощности, которыми располагает ООО "ТД
+                    МЕТАЛЛИКА", обеспечивают качественное изготовление
+                    оцинкованных металлоконструкций вышеназванного назначения
+                    производительностью до 2 000 тонн в месяц
+                </p>
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="contact">
-        <i class="ic-point"></i>
-        <div class="contact__text-wrap">
-            <span class="contact__name"> Адрес </span>
-            <a href="#" class="contact__link">
-                г. Саратов, ул. им. Чернышевского Н.Г., 203
+                <section class="gallery">
+    <div class="container">
+        <div class="pseudo"></div>
+        <div class="gallery__items">
+            <a
+                href="./img/gallery/9.png"
+                data-fslightbox="gallery-3"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/9.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/10.png"
+                data-fslightbox="gallery-3"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/10.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/11.png"
+                data-fslightbox="gallery-3"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/11.png"
+                    alt=""
+                    class="gallery__img"
+                />
+            </a>
+            <a
+                href="./img/gallery/12.png"
+                data-fslightbox="gallery-3"
+                class="gallery__item"
+            >
+                <img
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-offset="0"
+                    src="./img/gallery/12.png"
+                    alt=""
+                    class="gallery__img"
+                />
             </a>
         </div>
+
+        <div class="gallery__text">
+            <h2
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                class="block-title gallery__title"
+            >
+                <span class="blue">Отгрузка</span> готовой продукции
+            </h2>
+
+            <div
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="0"
+                class="descr gallery__descr"
+            >
+                <p>
+                    На каждую деталь при изготовлении наносится маркировка,
+                    используемая на монтажной схеме
+                </p>
+
+                <p>
+                    Части опоры собираются в пакеты, которые снабжены своей
+                    маркировкой с указанием номера пакета, типа опоры и общим
+                    количеством пакетов, принадлежащих одной опоре
+                </p>
+
+                <p>
+                    Метизы, необходимые для сборки опоры, также упаковываются
+                    соответствующим образом по видам и типам и укладываются в
+                    отгружаемую опору согласно ведомости метизов
+                </p>
+
+                <p>
+                    В таком упакованном виде пакеты с частями опоры готовы к
+                    дальнейшей транспортировке железнодорожным или автомобильным
+                    транспортом
+                </p>
+            </div>
+        </div>
     </div>
+</section>
+
+                <section class="map">
+    <div class="container">
+        <div class="pseudo">
+            <span class="pseudo__text"> [ размещение опор ] </span>
+        </div>
+
+        <header class="map__header">
+            <a
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                href="#"
+                class="btn map__btn"
+            >
+                смотреть все
+            </a>
+
+            <div class="map__right">
+                <h2
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    class="block-title map__title"
+                >
+                    <span class="blue">География</span> поставок опор ЛЭП
+                </h2>
+
+                <p
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="100"
+                    class="map__subtitle"
+                >
+                    Наведи курсор на вышку, чтобы узнать о проекте подробнее
+                </p>
+            </div>
+        </header>
+
+        <div
+            data-aos="zoom-out"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+            class="map__main"
+        >
+            <div class="map-item-mobile" style="left: 15%; top: 20%">2</div>
+            <div class="map-item-mobile" style="left: 10.5%; top: 34%">3</div>
+            <div class="map-item-mobile" style="left: 6%; top: 56%">3</div>
+            <div class="map-item-mobile" style="left: 34%; top: 40%">7</div>
+            <div class="map-item-mobile" style="left: 75%; top: 38%">4</div>
+            <div class="map-item" style="left: 50%; top: 50%">
+    <div class="map-item__img"></div>
+    <span class="map-item__circle"></span>
+    <span class="map-item__name"> [ ПС 220 кВ Мирная </span>
 </div>
 
         </div>
 
-        <div class="callback__column">
-            <form class="form">
-    <h2 class="section-title form__title">Заказать звонок</h2>
-
-    <div class="form__grid">
-        <input
-            name="name"
-            type="text"
-            placeholder="Имя"
-            required
-            class="input form__input"
-        />
-        <input
-            name="tel"
-            type="text"
-            placeholder="Телефон"
-            required
-            class="input tel form__input"
-        />
-        <input
-            name="email"
-            type="text"
-            placeholder="E-mail"
-            required
-            class="input form__input"
-        />
-        <textarea
-            name="message"
-            placeholder="Комментарий"
-            class="input form__textarea"
-        ></textarea>
-    </div>
-
-    <p class="form__agree">
-        Нажимая "Отправить", вы даёте согласие на обработку персональных данных
-        в соответствии с <a href="#">политикой конфиденциальности</a
-        > и принимаете условия <a href="#">пользовательского соглашения</a>.
-    </p>
-
-    <button type="submit" class="btn btn_secondary form__btn">Отправить</button>
-</form>
-
-        </div>
+        <a
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            href="#"
+            class="btn map__btn map__btn_mobile"
+        >
+            смотреть все
+        </a>
     </div>
 </section>
+
+                <section class="partners">
+    <div class="container">
+        <div class="pseudo">
+            <span class="pseudo__text"> [ партнёры ] </span>
+        </div>
+
+        <header class="partners__header">
+            <div></div>
+            <h2
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                class="block-title blue partners__title"
+            >
+                Наши партнёры
+            </h2>
+        </header>
+
+        <div class="partners__items">
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="0"
+                class="partner"
+            >
+                <img src="./img/partners/1.png" alt="" class="partner__img" />
+                <span class="partner__name"> Электромния </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                class="partner"
+            >
+                <img src="./img/partners/2.png" alt="" class="partner__img" />
+                <span class="partner__name"> Монолит </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                class="partner"
+            >
+                <img src="./img/partners/3.png" alt="" class="partner__img" />
+                <span class="partner__name">
+                    Стройэнерго <br />
+                    комлект
+                </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="300"
+                class="partner"
+            >
+                <img src="./img/partners/4.png" alt="" class="partner__img" />
+                <span class="partner__name"> Электроцентромонтаж </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="400"
+                class="partner"
+            >
+                <img src="./img/partners/5.png" alt="" class="partner__img" />
+                <span class="partner__name">
+                    Сеть <br />
+                    комлектация
+                </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="500"
+                class="partner"
+            >
+                <img src="./img/partners/6.png" alt="" class="partner__img" />
+                <span class="partner__name"> ТП ГЭМ </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="600"
+                class="partner"
+            >
+                <img src="./img/partners/7.png" alt="" class="partner__img" />
+                <span class="partner__name">
+                    Металлоинвест <br />
+                    Рудстрой
+                </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="700"
+                class="partner"
+            >
+                <img src="./img/partners/8.png" alt="" class="partner__img" />
+                <span class="partner__name"> Веневэнергострой </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="800"
+                class="partner"
+            >
+                <img src="./img/partners/9.png" alt="" class="partner__img" />
+                <span class="partner__name"> МК Компания </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="900"
+                class="partner"
+            >
+                <img src="./img/partners/10.png" alt="" class="partner__img" />
+                <span class="partner__name"> Эксклюлизвстрой </span>
+            </div>
+            <div
+                data-aos="fade"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-delay="1000"
+                class="partner"
+            >
+                <img src="./img/partners/11.png" alt="" class="partner__img" />
+                <span class="partner__name"> Блок </span>
+            </div>
+            <a href="#" class="btn partners__btn"> ОСТАВИТЬ ЗАЯВКУ </a>
+        </div>
+
+        <div class="swiper partners__slider">
+            <div class="swiper-wrapper">
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="0"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/1.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> Электромния </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="100"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/2.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> Монолит </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="200"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/3.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name">
+                        Стройэнерго <br />
+                        комлект
+                    </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="300"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/4.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> Электроцентромонтаж </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="400"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/5.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name">
+                        Сеть <br />
+                        комлектация
+                    </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="500"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/6.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> ТП ГЭМ </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="600"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/7.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name">
+                        Металлоинвест <br />
+                        Рудстрой
+                    </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="700"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/8.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> Веневэнергострой </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="800"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/9.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> МК Компания </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="900"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/10.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> Эксклюлизвстрой </span>
+                </div>
+                <div
+                    data-aos="fade"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="1000"
+                    class="swiper-slide partner"
+                >
+                    <img
+                        src="./img/partners/11.png"
+                        alt=""
+                        class="partner__img"
+                    />
+                    <span class="partner__name"> Блок </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners__pagination"></div>
+    </div>
+</section>
+
+                <div class="callback callback_questions">
+    <div class="container">
+        <div class="pseudo"></div>
+
+        <h2
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="block-title callback__title"
+        >
+            Остались вопросы?
+        </h2>
+
+        <div
+            data-aos="zoom-out"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+            class="callback__form"
+        >
+            <div class="callback__wrap">
+                <input type="text" placeholder="Ваше ФИО" class="input" />
+                <input
+                    type="text"
+                    placeholder="Ваш номер телефона"
+                    class="input"
+                />
+                <textarea
+                    placeholder="Ваш вопрос"
+                    class="input input_textarea"
+                ></textarea>
+                <button class="btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </div>
+
+            <div class="checkbox">
+                <input
+                    type="checkbox"
+                    hidden
+                    id="agree2"
+                    class="checkbox__input"
+                />
+                <label for="agree2" class="checkbox__label">
+                    <span>
+                        Даю согласие на обработку
+                        <a href="#">персональных данных</a>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
 
             </main>
 
@@ -401,158 +1054,201 @@
     <div class="container">
         <div class="footer__top">
             <div class="footer__column">
-                <a href="#" class="logo logo_white"></a>
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li>
-                            <a href="./about.html" class="footer__link"
-                                >О компании</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./equipment.html" class="footer__link"
-                                >Оборудование</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./contacts.html" class="footer__link"
-                                >Контакты</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+                <h3 class="footer__list-title">Информация</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> Доставка </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Проекты </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__list-title">Компания</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> О компании </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Партнёры </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Отзывы </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__list-title">Контакты</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="tel:+78126706280" class="footer__link">
+                            +7 (812) 670-62-80
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="mailto:info@tdmetallica.ru"
+                            class="footer__link"
+                        >
+                            info@tdmetallica.ru
+                        </a>
+                    </li>
+                    <li>г. Москва, ул. Большая Полянка, д. 42</li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6ef60050c3581ea6de63ef5c6f272b24c2c3808e57dbaf08b38cef32e5792e2&amp;source=constructor"
+                    width="306"
+                    height="150"
+                    frameborder="0"
+                ></iframe>
+            </div>
+        </div>
+
+        <div class="footer__middle">
+            <div class="footer__column">
+                <h3 class="footer__list-title">Металлические опоры ЛЭП</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> 110 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 220 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 330 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 35 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 500 КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> 750КВ </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Анккерно-угловые </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Промежуточные </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Переходные </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Новой унификации </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="footer__column">
-                <nav class="footer__nav footer__nav_mobile">
-                    <ul class="footer__list">
-                        <li>
-                            <a href="./about.html" class="footer__link"
-                                >О компании</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./equipment.html" class="footer__link"
-                                >Оборудование</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./contacts.html" class="footer__link"
-                                >Контакты</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+                <h3 class="footer__list-title">Металлоконструкции</h3>
 
-                <div class="footer__contacts-wrap">
-                    <a href="tel:+79998887766" class="ic-phone footer__phone">
-                        +7 999 888-77-66
-                    </a>
-                    <a
-                        href="mailto:zakaz@tgs64.ru"
-                        class="ic-mail footer__email"
-                    >
-                        zakaz@tgs64.ru
-                    </a>
-                </div>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для железобетонных опор ВЛ 35-750 КВ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Свайных фундаментов для стальных опор ВЛ 35-500КВ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для железобетонных порталов ОРУ 350-500КВ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Опор под оборудование ОРУ 35-750КВ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__list-title">Стальные порталы ОРУ</h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для обычных районов
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Для северных районов
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__list-title">
+                    Прожекторные мачты и молниеотводы
+                </h3>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link"> Молниеотводы </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> Партнёры </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Прожекторные матчи
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="logo logo_white footer__logo"></a>
             </div>
         </div>
 
         <div class="footer__bottom">
-            <div class="footer__column">
-                <p class="footer__rights">
-                    Общество с ограниченной ответственностью «ТРЕСТ
-                    ГИДРОСТРОЙ-64» (ООО «ТГС-64») <br />
-                    ОГРН 1216400012730, ИНН 6449101044 <br />
-                    Юр. адрес: 410002, Саратовская обл., г. Саратов, ул. им.
-                    Чернышевского Н.Г., 203
-                </p>
-            </div>
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6ef60050c3581ea6de63ef5c6f272b24c2c3808e57dbaf08b38cef32e5792e2&amp;source=constructor"
+                width="306"
+                height="150"
+                frameborder="0"
+            ></iframe>
 
-            <div class="footer__column">
-                <a href="#" class="footer__rights-link">
-                    Политика конфиденциальности
-                </a>
-                <a href="#" class="footer__rights-link">
-                    Пользовательское соглашение
-                </a>
-                <a href="https://newway-studio.ru/" class="footer__develop">
-                    Сайт разработан студией NewWay
-                </a>
-            </div>
+            <a
+                href="#"
+                class="logo logo_white footer__logo footer__logo_mobile"
+            ></a>
+
+            <a href="#" class="footer__policy"> Политика конфиденциальности </a>
+
+            <span class="footer__rights">
+                © ООО "ТД МЕТАЛЛИКА" 2015 — 2025
+            </span>
+
+            <p class="footer__develop">
+                Разработка сайта - <a href="#" target="_blank">Pixel.Agency</a>
+            </p>
         </div>
     </div>
 </footer>
-
-<div
-    class="modal form-modal"
-    id="form-modal"
-    data-iziModal-title="Заказать звонок"
->
-    <button class="ic-cross modal__skip"></button>
-    <form class="form">
-    <h2 class="section-title form__title">Заказать звонок</h2>
-
-    <div class="form__grid">
-        <input
-            name="name"
-            type="text"
-            placeholder="Имя"
-            required
-            class="input form__input"
-        />
-        <input
-            name="tel"
-            type="text"
-            placeholder="Телефон"
-            required
-            class="input tel form__input"
-        />
-        <input
-            name="email"
-            type="text"
-            placeholder="E-mail"
-            required
-            class="input form__input"
-        />
-        <textarea
-            name="message"
-            placeholder="Комментарий"
-            class="input form__textarea"
-        ></textarea>
-    </div>
-
-    <p class="form__agree">
-        Нажимая "Отправить", вы даёте согласие на обработку персональных данных
-        в соответствии с <a href="#">политикой конфиденциальности</a
-        > и принимаете условия <a href="#">пользовательского соглашения</a>.
-    </p>
-
-    <button type="submit" class="btn btn_secondary form__btn">Отправить</button>
-</form>
-
-</div>
- <div
-    class="modal form-modal"
-    id="thank-modal"
-    data-iziModal-title="Заказать звонок"
->
-    <button class="ic-cross modal__skip"></button>
-    <div class="thank">
-        <i class="ic-check thank__icon"></i>
-        <span class="group-title thank__title"> Спасибо! </span>
-        <p class="subtitle thank__subtitle">
-            Мы получили Ваши данные и скоро наш менеджер с Вами свяжется, чтобы
-            обсудить детали
-        </p>
-    </div>
-</div>
-
 
         </div>
 
         <!-- Wrapper End -->
 
         <script src="./js/index.bundle.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

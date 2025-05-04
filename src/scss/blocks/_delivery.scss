@@ -7,6 +7,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
+        align-items: center;
     }
 
     &__title {
@@ -44,5 +45,53 @@
     }
 
     &__img {
+        &_mobile {
+            display: none;
+        }
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1200px) {
+    .delivery {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        &__img {
+            display: none;
+
+            &_mobile {
+                display: block;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .delivery {
+        &__items {
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .delivery {
+        margin-bottom: 5rem !important;
+        margin-top: 0.625rem;
+        &__items {
+            li {
+                font-size: 1rem;
+
+                &::before {
+                    height: 2.25rem;
+                    width: 0.125rem;
+                }
+            }
+        }
     }
 }

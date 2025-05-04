@@ -61,6 +61,67 @@
     table {
         text-align: center;
     }
+
+    &__mobile-filter {
+        display: none;
+        flex-direction: column;
+        gap: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.filter-item {
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background: $white;
+
+    &__open {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        padding-bottom: 0.3125rem;
+        padding-top: 1.25rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+
+        li {
+            font-weight: $semibold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.625rem;
+            line-height: 110%;
+            transition: 0.3s;
+
+            &::before {
+                content: "";
+                height: 0.125rem;
+                width: 1.125rem;
+                background: $primaryColor;
+                display: inline-block;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &_active {
+        color: $white;
+        background: $primaryColor;
+
+        li {
+            &::before {
+                background: $white;
+            }
+        }
+
+        svg {
+            stroke: $white;
+        }
+    }
 }
 
 .filter {
@@ -106,5 +167,64 @@
     &__bottom &__btn {
         max-width: 12.94rem;
         width: 100%;
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1200px) {
+    .subcategory {
+        &__filter {
+            display: none;
+        }
+
+        &__mobile-filter {
+            display: flex;
+        }
+
+        &__table-wrap {
+            width: 100%;
+            overflow: auto;
+            padding-bottom: 0.625rem;
+
+            &::-webkit-scrollbar {
+                width: 0.75rem;
+                height: 0.625rem;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: $gray4;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                box-shadow: inset 0 0 6.25rem $primaryColor;
+                border: 0.125rem solid $gray4;
+                border-radius: 0;
+            }
+
+            table {
+                min-width: 85rem;
+            }
+        }
+
+        &__title {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .subcategory {
+        margin-top: 0.625rem;
+        margin-bottom: 5rem;
+
+        &__title {
+            font-size: 2.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &__link-wrap {
+            margin-top: 1.25rem;
+        }
     }
 }

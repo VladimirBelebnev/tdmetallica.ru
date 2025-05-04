@@ -5,7 +5,7 @@
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 1.1fr;
+        grid-template-columns: 47.88rem 1fr;
         gap: 7.9375rem;
     }
 
@@ -19,12 +19,16 @@
         gap: 2.5rem 7rem;
 
         li {
-            color: $primaryColor;
             font-size: 2rem;
             font-weight: $semibold;
+            display: inline-flex;
+            align-items: center;
+            gap: 1.25rem;
+            white-space: nowrap;
 
             a {
                 position: relative;
+                transition: 0.3s;
 
                 &::before {
                     content: "";
@@ -32,7 +36,7 @@
                     width: 0;
                     background: $primaryColor;
                     position: absolute;
-                    top: calc(100% + 0.5rem);
+                    top: calc(100% + 0.25rem);
                     left: 0;
                     transition: 0.3s;
                 }
@@ -43,8 +47,62 @@
 
                 &:hover {
                     color: $primaryColor;
+                    transform: translate(0, -0.5rem);
                 }
             }
+
+            &::before {
+                content: "";
+                height: 2.5rem;
+                width: 0.25rem;
+                background: $primaryColor;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1450px) {
+    .contacts {
+        .container {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        &__items {
+            gap: 1.25rem;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .contacts {
+        margin-top: 0.625rem;
+        margin-bottom: 5rem;
+        &__title {
+            margin-bottom: 2.5rem;
+        }
+        &__items {
+            li {
+                font-size: 1rem;
+                gap: 0.875rem;
+
+                &::before {
+                    width: 0.125rem;
+                    height: 1.125rem;
+                }
+
+                a {
+                    &::before {
+                        height: 0.125rem;
+                    }
+                }
+            }
+        }
+        iframe {
+            height: 17.5rem;
         }
     }
 }
