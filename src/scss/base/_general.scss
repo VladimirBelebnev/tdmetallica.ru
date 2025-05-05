@@ -270,20 +270,20 @@
     position: absolute;
     top: 0;
     left: $containerPaddingDesk;
-    // background: url("../img/icons/pseudo.svg") no-repeat top left / 100%
-    //     1.4375rem;
+    background: url("../img/icons/pseudo.svg") no-repeat top left / 100%
+        1.4375rem;
     padding-top: 1.375rem;
     padding-left: 0.625rem;
 
-    &::before {
-        content: "";
-        width: 100%;
-        height: 0.0625rem;
-        background: $gray1;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+    // &::before {
+    //     content: "";
+    //     width: 100%;
+    //     height: 0.0625rem;
+    //     background: $gray1;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
 
     &__text {
         line-height: 100%;
@@ -605,4 +605,13 @@ table {
             max-width: 6rem;
         }
     }
+}
+
+// Table Descr
+
+.table-descr {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
 }
