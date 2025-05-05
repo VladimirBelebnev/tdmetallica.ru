@@ -74,12 +74,23 @@
     width: 100%;
     padding: 0.625rem 1.25rem;
     background: $white;
+    transition: 0.3s;
 
     &__open {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        svg {
+            transition: 0.3s;
+        }
+
+        &.active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     &__list {
@@ -108,7 +119,7 @@
         }
     }
 
-    &_active {
+    &.active {
         color: $white;
         background: $primaryColor;
 
@@ -121,6 +132,10 @@
         svg {
             stroke: $white;
         }
+    }
+
+    &__hidden {
+        display: none;
     }
 }
 
